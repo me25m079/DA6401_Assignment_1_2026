@@ -1,0 +1,44 @@
+program: train.py
+method: random
+metric:
+  name: f1
+  goal: maximize
+
+parameters:
+  dataset:
+    values: ["mnist", "fashion_mnist"]
+
+  epochs:
+    value: 15
+
+  batch_size:
+    values: [32, 64, 128]
+
+  loss:
+    value: "cross_entropy"
+
+  optimizer:
+    values: ["sgd", "momentum", "rmsprop", "adam"]
+
+  learning_rate:
+    values: [0.1, 0.01, 0.001]
+
+  weight_decay:
+    values: [0.0, 0.0001, 0.0005]
+
+  num_layers:
+    values: [1, 2, 3]
+
+  hidden_size:
+    values:
+      - [64]
+      - [128]
+      - [128, 64]
+      - [128, 128]
+      - [128, 64, 32]
+
+  activation:
+    values: ["relu", "tanh"]
+
+  weight_init:
+    values: ["random", "xavier"]
