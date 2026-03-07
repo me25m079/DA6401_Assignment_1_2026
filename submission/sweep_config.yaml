@@ -1,0 +1,49 @@
+program: train.py
+method: random  # Random search for best model
+metric:
+  goal: maximize
+  name: val_f1
+
+parameters:
+  dataset:
+    value: mnist
+
+  epochs:
+    value: 15
+
+  batch_size:
+    values: [32, 64, 128]
+
+  loss:
+    values: [cross_entropy, mean_squared_error]
+
+  optimizer:
+    values: [sgd, momentum, nag, rmsprop]
+
+  learning_rate:
+    distribution: log_uniform_values
+    min: 0.0001
+    max: 0.1
+
+  weight_decay:
+    distribution: log_uniform_values
+    min: 0.001
+    max: 0.01
+
+  num_layers:
+    values: [2, 3, 4]
+
+  hidden_size:
+    values: 
+    - '[128, 128, 128]'
+    - '[64, 64]'
+    - '[32, 32, 64]'
+    - '[16, 16, 16]'
+    - '[128, 64, 32]'
+    - '[128, 64, 32, 16]'
+
+  activation:
+    values: [sigmoid, tanh, relu]
+
+  weight_init:
+    values: [random, xavier]
