@@ -1,14 +1,10 @@
 # DA6401 – Assignment 1: Multi-Layer Perceptron for Image Classification
 
-A fully-featured, NumPy-only MLP implementation for MNIST and Fashion-MNIST classification.
-
----
-
 ## Links
 
 | Resource | URL |
 |---|---|
-| **W&B Report** | _Paste your W&B public report link here_ |
+| **W&B Report** | https://api.wandb.ai/links/me25m079-indian-institute-of-technology-madras/duoncekt |
 | **GitHub Repo** | _Paste your public GitHub repository link here_ |
 
 ---
