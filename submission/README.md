@@ -5,7 +5,7 @@
 | Resource | URL |
 |---|---|
 | **W&B Report** | https://api.wandb.ai/links/me25m079-indian-institute-of-technology-madras/duoncekt |
-| **GitHub Repo** | _Paste your public GitHub repository link here_ |
+| **GitHub Repo** |https://github.com/me25m079/DA6401_Assignment_1_2026.git |
 
 ---
 
